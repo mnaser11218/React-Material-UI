@@ -1,6 +1,7 @@
 import React from 'react'
-import {Button, Container, Typography } from '@mui/material'
+import {Button, Container, IconButton, Typography } from '@mui/material'
 // import Buttons from '../Buttons'
+import DataObjectIcon from '@mui/icons-material/DataObject';
 
 function Create() {
   return (
@@ -28,8 +29,15 @@ Create a New Note
    onClick={()=> console.log("you clicked submit")}
    >
     SUBMIT</Button>
-
-    </Container>
+    {/* <IconButton onSubmit={()=> console.log("clicked icon")}>
+    <DataObjectIcon/>
+    </IconButton> */}
+    <Button  onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large" color="secondary"/>}>
+Object
+    </Button>
+    <DataObjectIcon fontSize="medium" color="secondary"/>
+    
+        </Container>
  
   )
 }
