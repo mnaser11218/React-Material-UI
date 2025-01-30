@@ -1,5 +1,6 @@
 import React from 'react'
-import { Typography } from '@mui/material'
+import {Button, Container, Typography } from '@mui/material'
+// import Buttons from '../Buttons'
 
 function Create() {
   return (
@@ -12,14 +13,24 @@ function Create() {
 //     Create a new note
 //    </Typography>
 
+<Container  >
    <Typography 
+   variant="h4"
     color="textSecondary"
     noWrap
     // border="solid"
     gutterBottom={true}
     >
-   Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur distinctio accusantium voluptatibus labore porro, voluptas quod dolores deleniti odit, ad consectetur ipsum aliquid. Dicta culpa natus laborum iure repudiandae minus.
+Create a New Note
    </Typography>
+   <Button
+   variant="contained"
+   onClick={()=> console.log("you clicked submit")}
+   >
+    SUBMIT</Button>
+
+    </Container>
+ 
   )
 }
 
