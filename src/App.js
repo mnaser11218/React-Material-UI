@@ -6,6 +6,7 @@ import Create from './Components/pages/Create';
 import Buttons from './Components/Buttons';
 import MuiTextField from './Components/TextField';
 import MuiSelect from './Components/MuiSelect';
+import MuiLogin from './Components/MuiLogin';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
       <Route path='/buttons' element={<Buttons/>}/>
       <Route path='/textfield' element={<MuiTextField/>}/>
       <Route path='/select' element={<MuiSelect/>}/>
+      <Route path='/login' element={<MuiLogin/>}/>
+
     </Routes>
    </Router>
 
