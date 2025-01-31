@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button, Container, IconButton, Typography } from '@mui/material'
+import {Button, Stack, Container, IconButton, Typography } from '@mui/material'
 // import Buttons from '../Buttons'
 import DataObjectIcon from '@mui/icons-material/DataObject';
 // import MakeStylesHook from '../MakeStylesHook';
@@ -39,6 +39,7 @@ function Create() {
     >
 Create a New Note
    </Typography>
+   <Stack spacing={5} direction={"row"} >
    <Button
    className={classes.btn}
    variant="contained"
@@ -48,10 +49,49 @@ Create a New Note
     {/* <IconButton onSubmit={()=> console.log("clicked icon")}>
     <DataObjectIcon/>
     </IconButton> */}
-    <Button className={classes.btn} onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
+    <Button onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
 Object
     </Button>
-    <DataObjectIcon fontSize="medium" color="secondary"/>
+    <Button onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
+Object
+    </Button>
+    <Button onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
+Object
+    </Button>
+    <Button onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
+Object
+    </Button>
+    </Stack>
+    {/* <DataObjectIcon fontSize="medium" color="secondary"/> */}
+    <Stack spacing={5} direction={"row"} >
+   <Button
+   className={classes.btn}
+   variant="contained"
+   color='primary'
+   onClick={()=> console.log("you clicked submit")}
+   >
+    SUBMIT</Button>
+    {/* <IconButton onSubmit={()=> console.log("clicked icon")}>
+    <DataObjectIcon/>
+    </IconButton> */}
+    <Button
+      variant="contained" color='seconday' onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
+Object
+    </Button>
+    <Button  variant="contained" color='error' onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
+Object
+    </Button>
+    <Button variant="contained" color='warning' onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
+Object
+    </Button>
+    <Button variant="contained" color='info' onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
+Object
+    </Button>
+    <Button variant="contained" color='success' onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
+Object
+    </Button>
+    </Stack>
+
     
         </Container>
  
