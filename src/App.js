@@ -7,6 +7,8 @@ import Buttons from './Components/Buttons';
 import MuiTextField from './Components/TextField';
 import MuiSelect from './Components/MuiSelect';
 import MuiLogin from './Components/MuiLogin';
+import MuiRegister from './Components/MuiRegister';
+import DashboardLayoutBasic from './Components/Drawer';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <Route path='/textfield' element={<MuiTextField/>}/>
       <Route path='/select' element={<MuiSelect/>}/>
       <Route path='/login' element={<MuiLogin/>}/>
+      <Route path='/register' element={<MuiRegister/>}/>
+      <Route path="/drawer" element={<DashboardLayoutBasic/>}/>
 
     </Routes>
    </Router>
