@@ -39,58 +39,7 @@ function Create() {
     >
 Create a New Note
    </Typography>
-   <Stack spacing={5} direction={"row"} >
-   <Button
-   className={classes.btn}
-   variant="contained"
-   onClick={()=> console.log("you clicked submit")}
-   >
-    SUBMIT</Button>
-    {/* <IconButton onSubmit={()=> console.log("clicked icon")}>
-    <DataObjectIcon/>
-    </IconButton> */}
-    <Button onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
-Object
-    </Button>
-    <Button onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
-Object
-    </Button>
-    <Button onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
-Object
-    </Button>
-    <Button onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
-Object
-    </Button>
-    </Stack>
-    {/* <DataObjectIcon fontSize="medium" color="secondary"/> */}
-    <Stack spacing={5} direction={"row"} >
-   <Button
-   className={classes.btn}
-   variant="contained"
-   color='primary'
-   onClick={()=> console.log("you clicked submit")}
-   >
-    SUBMIT</Button>
-    {/* <IconButton onSubmit={()=> console.log("clicked icon")}>
-    <DataObjectIcon/>
-    </IconButton> */}
-    <Button
-      variant="contained" color='seconday' onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
-Object
-    </Button>
-    <Button  variant="contained" color='error' onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
-Object
-    </Button>
-    <Button variant="contained" color='warning' onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
-Object
-    </Button>
-    <Button variant="contained" color='info' onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
-Object
-    </Button>
-    <Button variant="contained" color='success' onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
-Object
-    </Button>
-    </Stack>
+
 
     
         </Container>
