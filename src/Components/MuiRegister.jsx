@@ -24,10 +24,6 @@ function MuiRegister() {
 
   <Button variant="contained" color='primary' fullWidth>Register</Button>
 
-  {/* <Typography>Do you have an account? 
-    <Link href="/signup">Sign up</Link>
-  </Typography> */}
-
 
 </Paper>
 </Grid2>  
