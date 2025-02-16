@@ -6,7 +6,6 @@ function MuiSelect() {
   const [country, setCountry] = useState('')
   const countries = [{value: "In", country: "india"}, {value: "pa", country: "pakistan"}]
   const [countriesArray, setCountriesArray] = useState([])
-  // console.log({countriesArray})
   const handleChange = (e)=>setCountry(e.target.value)
 
   return (

@@ -28,9 +28,8 @@ function Buttons() {
    onClick={()=> console.log("you clicked submit")}
    >
     SUBMIT</Button>
-    {/* <IconButton onSubmit={()=> console.log("clicked icon")}>
-    <DataObjectIcon/>
-    </IconButton> */}
+   
+   
     <Button onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
 Object
     </Button>
