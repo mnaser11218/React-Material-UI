@@ -20,14 +20,7 @@ const useStyles = makeStyles({
 function Create() {
     const classes = useStyles()
   return (
-//    <Typography 
-//     variant="h1"
-//     color="primary"
-//     align="center"
-//     border="solid"
-//     >
-//     Create a new note
-//    </Typography>
+
 
 <Container  >
    <Typography 
