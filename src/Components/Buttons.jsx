@@ -43,7 +43,7 @@ Object
 Object
     </Button>
     </Stack>
-    {/* <DataObjectIcon fontSize="medium" color="secondary"/> */}
+   
     <Stack spacing={5} direction={"row"} >
    <Button
    className={classes.btn}
@@ -52,9 +52,7 @@ Object
    onClick={()=> console.log("you clicked submit")}
    >
     SUBMIT</Button>
-    {/* <IconButton onSubmit={()=> console.log("clicked icon")}>
-    <DataObjectIcon/>
-    </IconButton> */}
+    
     <Button
      size="small" variant="contained" color='seconday' onClick={()=> console.log("clicked obj button")} startIcon={<DataObjectIcon fontSize="large"/>}>
 Object

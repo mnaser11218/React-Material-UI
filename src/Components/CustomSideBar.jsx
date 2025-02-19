@@ -140,12 +140,6 @@ export default function LeftSidebar() {
           <Button href="/cloneTable" variant='standard'>
             Table
             </Button>
-      
-
-          {/* <Typography variant="h6" noWrap component="div">
-            Tiles
-          </Typography>
-          */}
             
          
         </Toolbar>
