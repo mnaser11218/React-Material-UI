@@ -6,7 +6,6 @@ import { useLocation, useNavigate } from 'react-router-dom';
 
 
 function Tiles() {
-    const navigate = useNavigate();
     const location = useLocation();
     const [cockpitData, setCockpitData] = useState({})
   const analysisId = location.state?.data;
@@ -15,8 +14,6 @@ function Tiles() {
     const response = await fetch(`http://0.0.0.0:8000/code_cockpit_dashboard?analysis_id=${analysisId}`)
     const data = await response.json()
     setCockpitData(data.data)
-    console.log("data is:", cockpitData)
-
   }
 
   useEffect(()=>{
@@ -32,8 +29,7 @@ function Tiles() {
 
 <Grid container spacing={5}>
   { cockpitData ? cockpitData.map((obj, key) => {
-    const mdSize = obj.graphData ? 8 : 4;  // If graphData exists, span 2 tiles (md={8}), otherwise span 1 (md={4})
-
+    const mdSize = obj.graphData ? 8 : 4
     return (
       <Grid key={key} item xs={12} sm={6} md={mdSize}>
         <TileCard 
